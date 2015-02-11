@@ -144,16 +144,19 @@ a:hover {
     content: counter(list, decimal);
     position: absolute;
     color: #aaa;
-    right: 100%;
-    padding-right: 21px;
+    right: calc(100% + 13px);
+    padding-right: 9px;
     transition: color 200ms;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    width: 31px;
+    text-align: right;
 }
 
 #content > div li:hover:before {
     color: #555;
+    background-color: #FFC;
 }
 
 
