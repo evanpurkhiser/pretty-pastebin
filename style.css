@@ -146,6 +146,9 @@ a:hover {
     color: #aaa;
     right: 100%;
     padding-right: 21px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 
