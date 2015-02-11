@@ -1,0 +1,149 @@
+body {
+    background-color: #fff;
+    font: 14px Helvetica, arial, freesans, clean, sans-serif;
+    color: #333;
+}
+
+a:link,
+a:visited {
+    color: #4183C4 !important;
+    text-decoration: none;
+    font-size: 12px !important;
+    font-weight: inherit !important;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+#titlebar,
+#menu,
+#content form {
+    display: none;
+}
+
+#content {
+    margin: 40px 45px;
+    line-height: 1.4;
+}
+
+#content > h1 {
+    background: #f7f7f7;
+    color: #333;
+    padding: 0 15px;
+    padding-left: 44px;
+    border: 1px solid #ddd;
+    border-bottom-color: #d8d8d8;
+    border-radius: 3px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+    line-height: 44px;
+    font-size: 13px;
+    height: 42px;
+    position: relative;
+}
+
+#content > h1:after {
+    content: "";
+    height: 44px;
+    width: 46px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml;utf8,<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'> <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64' height='64' viewBox='0 0 64 64'> <path d='M44 8h-8v-4c0-2.2-1.8-4-4-4h-8c-2.2 0-4 1.8-4 4v4h-8v8h32v-8zM32 8h-8v-3.993c0.002-0.002 0.005-0.005 0.007-0.007h7.985c0.003 0.002 0.005 0.005 0.007 0.007v3.993zM52 20v-10c0-1.1-0.9-2-2-2h-4v4h2v8h-12l-12 12v16h-16v-36h2v-4h-4c-1.1 0-2 0.9-2 2v40c0 1.1 0.9 2 2 2h18v12h40v-44h-12zM36 25.657v6.343h-6.343l6.343-6.343zM60 60h-32v-24h12v-12h20v36z' fill='#555'></path> </svg>");
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+#content > h1 > a[title="download file"] {
+    position: absolute;
+    top: 0;
+    right: 6px;
+    text-indent: -9999px;
+    width: 44px;
+    background-image: url("data:image/svg+xml;utf8,<!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'> <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='64' height='64' viewBox='0 0 64 64'> <path d='M46 28l-16 16-16-16h10v-24h12v24zM30 44h-30v16h60v-16h-30zM56 52h-8v-4h8v4z' fill='#333'></path> </svg>");
+    background-size: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#content > h1 > a[title="download file"]:after {
+    content: "Download Contents";
+    position: absolute;
+    right: 48px;
+    top: 9px;
+    text-indent: 0;
+    line-height: 1;
+    pointer-events: none;
+    float: left;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: normal;
+    background: #333;
+    color: #F5F5F5;
+    padding: 7px 9px;
+    display: block;
+    border-radius: 3px;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate(-10px);
+    opacity: 0;
+}
+
+#content > h1 > a[title="download file"]:hover:after {
+    transform: translate(0);
+    opacity: 1;
+}
+
+#content > div {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-top: none;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+#content > div li > div,
+#content > div ol {
+    font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 12px;
+}
+
+#content > div ol {
+    list-style: none;
+    margin: 0;
+    padding: 12px;
+    padding-left: 53px;
+    position: relative;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#content > div ol:before {
+    content: "";
+    background: #eee;
+    width: 1px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+
+#content > div li {
+    background: none;
+    counter-increment: list 1;
+    position: relative;
+}
+
+#content > div li:before {
+    content: counter(list, decimal);
+    position: absolute;
+    color: #aaa;
+    right: 100%;
+    padding-right: 21px;
+}
