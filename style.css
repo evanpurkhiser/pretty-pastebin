@@ -146,9 +146,14 @@ a:hover {
     color: #aaa;
     right: 100%;
     padding-right: 21px;
+    transition: color 200ms;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+}
+
+#content > div li:hover:before {
+    color: #555;
 }
 
 
