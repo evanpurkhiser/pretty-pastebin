@@ -147,3 +147,23 @@ a:hover {
     right: 100%;
     padding-right: 21px;
 }
+
+
+div.diff .kw1 {color: #aaaaaa; font-style: italic;}
+div.diff .kw2 {color: #dd6611;}
+div.diff .re0 {color: #440088;}
+div.diff .re1 {color: #991111;}
+div.diff .re2 {color: #00b000;}
+div.diff .re3 {color: #BD2C00;}
+div.diff .re4 {color: #55A532;}
+div.diff .re5 {color: #0011dd;}
+div.diff .re6 {color: #795DA3; font-weight: bold;}
+div.diff .re7 {color: #BD2C00; background-color: #FFECEC; display: block;}
+div.diff .re8 {color: #55A532; background-color: #EAFFEA; display: block;}
+div.diff .re9 {color: #888822;}
+
+div.diff .re7,
+div.diff .re8 {
+    margin: 0 -6px;
+    padding: 0 6px;
+}
